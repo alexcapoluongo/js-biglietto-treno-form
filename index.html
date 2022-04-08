@@ -9,7 +9,54 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <div class="container">
+        <div class="form-item">
+            <label for="user-name">Nome Cognome</label>
+            <input type="text" name="user-name" id="user-name">
+        </div>
+
+        <div class="form-item">
+            <label for="user-km">Km da percorrere</label>
+            <input type="text" name="user-km" id="user-km">
+        </div>
+
+        <div class="form-item">
+            <label for="user-age">Fascia d'età</label>
+            <select name="user-age" id="user-age">
+                <option value="junior">Minorenne</option>
+                <option value="full-price">Maggiorenne</option>
+                <option value="senior">Over 65</option>
+            </select>
+        </div>
+
+        <button id="form-btn">Genera</button>
+        <button id="delete-btn">Annulla</button>
+    </div>
+
+    <h1>IL TUO  BIGLIETTO</h1>
+
+    <div class="result">
+        <h2>DETTAGLIO PASSEGGERI</h2>
+        <div class="ticket">
+            <table>
+                <tr>
+                    <td>NOME PASSEGGERO</td>
+                    <td>Offerta</td>
+                    <td>Carrozza</td>
+                    <td>Codice CP</td>
+                    <td>Costo biglietto</td>
+                </tr>
+                <tr>
+                    <td id="name-result">NOME</td>
+                    <td id="discount-result">Offerta</td>
+                    <td id="place-result">Carrozza</td>
+                    <td id="code-result">Codice CP</td>
+                    <td id="price-result">Costo biglietto</td>
+                </tr>
+            </table>
+        </div>
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>
