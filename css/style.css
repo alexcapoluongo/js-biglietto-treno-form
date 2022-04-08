@@ -78,12 +78,18 @@ select {
 .box-ticket {
     border-top: 2px solid gray;
     border-bottom: 2px solid gray;
-    height:200px;
+    height:100px;
+}
+
+tr {
+    margin:3em;
 }
 
 td {
     margin:10px;
+    text-align: center;
 }
+
 .name-passenger {
     background-color: lightgray;
 }
