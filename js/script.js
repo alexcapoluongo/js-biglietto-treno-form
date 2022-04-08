@@ -60,14 +60,32 @@ formBtn.addEventListener('click',
 
          // prezzo da pagare
 
-         const finalPrice = price - discount;
+         const finalPrice = (price - discount).toFixed(2);
          console.log(finalPrice);
 
+         //stampa costo biglietto
          const finalPricePrint = document.getElementById('price-result');
          finalPricePrint.innerHTML = `${finalPrice}`;
-
-         //stampa costo biglietto
-
        
+        const resultBlock = document.querySelector('.result');
+        resultBlock.classList.remove('d-none');
+        
+    }
+)
+
+const deleteBtn = document.getElementById('delete-btn');
+console.log(deleteBtn);
+deleteBtn.addEventListener('click',
+    function() {
+        const resultBlock = document.querySelector('.result');
+        resultBlock.classList.add('d-none');
+
+        const userName = document.getElementById('user-name')
+        userName.value = "";
+        const userKm = document.getElementById('user-km');
+        userKm.value = "";
+        let userAge = document.getElementById('user-age');
+        userAge.value = "";
+
     }
 )
