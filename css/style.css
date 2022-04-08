@@ -1,3 +1,90 @@
+/* COMMON */
+
+body { 
+    background-color: #b91450;
+    font-family: sans-serif;
+}
+
+h1 {
+    color:white;
+    text-align: center;
+}
+/* LAYOUT */
+
+.container {
+    width:80%;
+    margin:0 auto;
+}
+
+/* FIRST BOX */
+.box-1 {
+    border-radius:10px;
+}
+
+.box {
+    background-color: white;
+    padding:5em;
+}
+
+.row {
+    display:flex;
+    justify-content: space-around;
+    width:100%;
+}
+
+.row-2{
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+.row-2 button {
+    margin:10px;
+    padding: 5px 2px;
+    color: #b91450;
+    font-weight: bolder;
+    border-radius: 3px;
+}
+
+.row-2 button:hover {
+    border:2px solid goldenrod;
+}
+
+.form-item {
+    display:flex;
+    flex-direction: column;
+}
+
+input[type=text] {
+    height:20px;
+}
+
+select {
+    height:26px;
+}
+
+.box label {
+    color: #b91450;
+    font-weight: bolder;
+    text-align: center;
+}
+
 .d-none {
     display: none;
 }
+
+/* SECOND BOX */
+
+.box-ticket {
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    height:200px;
+}
+
+td {
+    margin:10px;
+}
+.name-passenger {
+    background-color: lightgray;
+}
+
