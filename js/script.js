@@ -86,6 +86,5 @@ deleteBtn.addEventListener('click',
         userKm.value = "";
         let userAge = document.getElementById('user-age');
         userAge.value = "";
-
     }
 )
